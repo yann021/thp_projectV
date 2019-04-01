@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<title> kit UI</title>
+	</head>
+
+	<body>
+    <form>
+      <div class="card m-3">
+        <h2 class="card-header ybo_text_center">Sign up</h2>
+        <div class="card-body">
+      		<div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="user_first_name">First name</label><br />
+            <div class="col-sm-9">
+              <input class="form-control" type="text" name="user[first_name]" id="user_first_name" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="user_last_name">Last name</label><br />
+            <div class="col-sm-9">
+             <input class="form-control" type="text" name="user[last_name]" id="user_last_name" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="user_description">Description</label><br />
+            <div class="col-sm-9">
+              <textarea class="form-control" name="user[description]" id="user_description">
+              </textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="user_email">Email</label><br />
+            <div class="col-sm-9">
+              <input autofocus="autofocus" autocomplete="email" class="form-control" type="email" value="" name="user[email]" id="user_email" />
+            </div>
+          </div>
+
+         <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="user_password">Password (6 char. min.)</label>
+          <br />
+          <div class="col-sm-9">
+            <input autocomplete="new-password" class="form-control" type="password" name="user[password]" id="user_password" />
+          </div>
+        </div>
+
+         <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="user_password_confirmation">Password confirmation</label><br />
+          <div class="col-sm-9">
+            <input autocomplete="new-password" class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+          </div>
+        </div>
+
+        <div class="actions ybo_text_center">
+          <input type="submit" name="commit" value="Sign up" class="btn btn-success" data-disable-with="Sign up" />
+          <input type="button" name="button" value="Log in" class="btn btn-primary" data-disable-with="Log in" />
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

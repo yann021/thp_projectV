@@ -1,0 +1,21 @@
+
+- bundle install
+- rails db:create
+- rails db:migrate
+- rail db:seed
+
+	Joindre Jquery et tubolinks 
+	===========================
+>> modif manuel dans le gemfile "gem 'jquery-turbolinks'"
+>> modif manuel dans app/assets/javascript/application.js "//= require jquery.turbolinks"
+- bundle install
+
+	joindre jquery et rails 
+	========================
+>> modif manuel dans le gemfile "gem 'jquery-rails'"
+- bundle install
+>> modif manuel dans app/assets/javascripts/application.js :
+		- "//= require jquery3"
+		- "//= require jquery_ujs"
+		- "//= require_tree ."
+

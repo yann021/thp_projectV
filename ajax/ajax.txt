@@ -1,0 +1,45 @@
+
+- bundle install
+- rails db:create
+- rails db:migrate
+- rail db:seed
+
+	Joindre Jquery et tubolinks 
+	===========================
+>> modif manuel dans le gemfile "gem 'jquery-turbolinks'"
+>> modif manuel dans app/assets/javascript/application.js "//= require jquery.turbolinks"
+- bundle install
+
+	joindre jquery et rails 
+	========================
+>> modif manuel dans le gemfile "gem 'jquery-rails'"
+- bundle install
+>> modif manuel dans app/assets/javascripts/application.js :
+		- "//= require jquery3"
+		- "//= require jquery_ujs"
+		- "//= require_tree ."
+
+
+
+>> modif manuel dans route.rb "resources :tasks"
+>> modif manuel dans le controller task
+	" respond_to do |format|
+        format.html { redirect_to root_path }
+        format.js "
+>> creation du fichier create.js.erb
+>> creation du fichier _task.html.erb
+
+ERREUR LORS DE L'ENVOIE DU FORMULAIRE.
+
+rails g modele Email object:string body:text
+rails db:migrate
+>> mofif manuel du fichier seed.rb
+>> modif manuel du gemfile
+	"gem 'faker'
+	 gem 'table_print'"
+bundle install
+rails db:seed
+
+>> modif manuel dans rout.rb
+	"root to: "email#index""
+rails g controller emails index

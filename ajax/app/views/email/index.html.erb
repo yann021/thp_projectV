@@ -1,0 +1,7 @@
+<h1>Email#index</h1>
+<p>Find me in app/views/email/index.html.erb</p>
+<% @emails.each do |mail| %>
+	<div class="row">
+		<div class="col-lg-4"><%= mail.object %></div>
+	</div>
+<% end %>
